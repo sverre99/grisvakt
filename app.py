@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 # 
 
 # Get the environment information we need to start the server
-port = '8080'
+port = 8080
 ip = '127.0.0.1'
 environ = os.environ
 
