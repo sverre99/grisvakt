@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 # Get the environment information we need to start the server
 ip = '127.0.0.1'
 port = int(os.environ['WEBAPP_SERVICE_PORT'])
-host_name = os.environ['hostname']
+host_name = os.environ['HOSTNAME']
 environ = os.environ
 
 ### My app
