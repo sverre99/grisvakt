@@ -40,7 +40,7 @@ def images_by_hour(images):
 def download_email(environ, myDir,email_flag='UNSEEN'):
 	import imaplib, email
 	
-	mail = imaplib.IMAP4_SSL(environ[u'GRISVAKT_EMAIL_IMAP_SERVER'])
+	mail = imaplib.IMAP4_SSL(environ[u'GRISVAKT_EMAIL_IMAP_SERVER'], port='993')
 	mail.login(environ[u'GRISVAKT_EMAIL_USER'], environ[u'GRISVAKT_EMAIL_PASSWORD'])
 	mail.select('inbox')
 
